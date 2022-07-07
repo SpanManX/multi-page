@@ -1,37 +1,3 @@
-/*let path = require("path");
-let glob = require("glob");
-// console.log(path)
-// 配置pages多页面获取当前文件夹下的html和js
-function getEntry(globPath) {
-    let entries = {},
-        basename,
-        tmp,
-        pathname,
-        appname;
-
-    glob.sync(globPath).forEach(function (entry) {
-        basename = path.basename(entry, path.extname(entry));
-        // console.log(entry)
-        tmp = entry.split("/").splice(-3);
-        console.log(tmp);
-        pathname = basename; // 正确输出js和html的路径
-
-        // console.log(pathname)
-        entries[pathname] = {
-            entry: "src/" + tmp[0] + "/" + tmp[1] + "/main.js",
-            template: "src/" + tmp[0] + "/" + tmp[1] + "/" + tmp[2],
-            title: tmp[2],
-            filename: tmp[2],
-        };
-    });
-    return entries;
-}
-
-let pages = getEntry("src/pages/!**?/!*.html");
-console.log(pages);*/
-
-// let path = require("path");
-
 let fs = require("fs")
 let os = require("os")
 let path = require("path")

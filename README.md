@@ -1,24 +1,21 @@
-# vue-test
+# multi-page
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
+### 项目整体启动
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 项目整体打包
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 启动 page1
 ```
-npm run lint
+vue-cli-service serve --page1
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 打包 page1
+```
+vue-cli-service build --page1
+```
